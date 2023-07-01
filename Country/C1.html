@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Webpage</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #2f363e;
+      color: #fff;
+      background-image: url("background.jpg");
+      background-size: cover;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #ffd700;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      justify-items: center;
+      margin-top: 40px;
+    }
+    
+    .country-card {
+      position: relative;
+      width: 250px;
+      height: 180px;
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+      cursor: pointer;
+    }
+    
+    .country-card:hover {
+      transform: rotateY(180deg);
+    }
+    
+    .country-card .card-front,
+    .country-card .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    
+    .country-card .card-front {
+      background-color: #50504f;
+      color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(0deg);
+    }
+    
+    .country-card .card-back {
+      background-color: #ffd700;
+      color: #000;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(180deg);
+    }
+    
+    .country-card img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .country-card span {
+      font-size: 18px;
+    }
+    
+    .country-card p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    
+    .country-card button {
+      background-color: #50504f;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .country-card button:hover {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Countries</h1>
+  
+  <div class="container">
+    <div class="country-card">
+      <div class="card-front">
+        <img src="aus.avif" alt="Australia Flag">
+        <span>Australia</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="brazil.avif" alt="Brazil Flag">
+        <span>Brazil</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="China.avif" alt="China Flag">
+        <span>China</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="Denmark.avif" alt="Denmark Flag">
+        <span>Denmark</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="France.avif" alt="France Flag">
+        <span>France</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="Germany.avif" alt="Germany Flag">
+        <span>Germany</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="India.jpg" alt="India Flag">
+        <span>India</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+    <div class="country-card">
+      <div class="card-front">
+        <img src="Indonesia.avif" alt="Indonesia Flag">
+        <span>Indonesia</span>
+      </div>
+      <div class="card-back">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="view-movies-button">View Movies</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

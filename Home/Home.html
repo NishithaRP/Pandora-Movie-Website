@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pandora Home</title>
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+    </head>
+    <body>
+      <div class="wrapper">
+        <div class="bg"> Pandora </div>
+        <div class="fg"> Pandora </div>
+      </div>
+  
+     
+
+
+        <ul class="navigation">
+            <li class="active">
+                <a href="Home.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="videocam-outline"></ion-icon></span>
+                    <span class="text">Movies</span>
+                </a>
+            </li>
+            <li>
+              <a href="../Genre/index.html">
+                  <span class="icon"><ion-icon name="film-outline"></ion-icon></i></span>
+                  <span class="text">Genre</span>
+              </a>
+          </li>
+          
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                    <span class="text">Year</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Country/Country.html">
+                    <span class="icon"><ion-icon name="globe-outline"></ion-icon></span>
+                    <span class="text">Country</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+        </ul>
+    
+    
+            <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="Navigation/k2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Navigation/inception.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Navigation/wwy.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="Navigation/johnwick.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      
+<h1 style="text-align: center; color: rgb(255, 255, 255); margin-top: 20px;">Latest Movies</h1>
+<div class="movie-card-container">
+  <div class="movie-card">
+    <img src="Cards/1.jpg" alt="Movie 1 Poster">
+    <div class="card-body">
+      <h3>Movie 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/2.jpg" alt="Movie 2 Poster">
+    <div class="card-body">
+      <h3>Movie 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/3.jpg" alt="Movie 3 Poster">
+    <div class="card-body">
+      <h3>Movie 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/4.jpg" alt="Movie 4 Poster">
+    <div class="card-body">
+      <h3>Movie 4</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/5.jpg" alt="Movie 1 Poster">
+    <div class="card-body">
+      <h3>Movie 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/6.jpg" alt="Movie 2 Poster">
+    <div class="card-body">
+      <h3>Movie 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/7.jpg" alt="Movie 3 Poster">
+    <div class="card-body">
+      <h3>Movie 3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div class="movie-card">
+    <img src="Cards/8.jpg" alt="Movie 4 Poster">
+    <div class="card-body">
+      <h3>Movie 4</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="membership-card-container">
+  <div class="membership-card">
+    <div class="face face1">
+      <div class="content">
+        <i class="fas fa-video"></i>
+        <h3>Basic</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Access to a wide range of movies and TV shows</p>
+        <a href="#" type="button">Upgrade</a>
+      </div>
+    </div>
+ </div>
+ 
+ <div class="membership-card">
+    <div class="face face1">
+      <div class="content">
+        <i class="fas fa-film"></i>
+        <h3>Premium</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Exclusive access to all movies and TV shows</p>
+        <a href="#" type="button">Upgrade</a>
+      </div>
+    </div>
+ </div>
+ 
+ <div class="membership-card">
+    <div class="face face1">
+      <div class="content">
+        <i class="fas fa-tv"></i>
+        <h3>Ultra</h3>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content">
+        <p>Ultra HD streaming on multiple devices</p>
+        <a href="#" type="button">Upgrade</a>
+      </div>
+    </div>
+ </div>
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+      
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="script.js"></script>
+
+
+
+ 
+<script>
+    const movieCards = document.querySelectorAll('.movie-card');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    
+    movieCards.forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+    
+
+        
+        
+        <script>
+            let list = document.querySelectorAll('.navigation li');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click', activeLink ))
+        </script>
+
+        
+
+       
+            
+    </body>
+</html>
